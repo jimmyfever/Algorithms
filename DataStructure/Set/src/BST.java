@@ -89,19 +89,19 @@ public class BST<E extends Comparable<E>> {
 				stack.push(cur.left);
 		}
 	}
-	public void levelOrder() {
-		Queue<Node> q = new LinkedList<>(); 
-		q.add(root);
-		while(!q.isEmpty()) {
-			Node cur = q.poll();
-			System.out.println(cur.e);
-			
-			if(cur.left != null)
-				q.add(cur.left);
-			if(cur.right != null)
-				q.add(cur.right);
-		}
-	}
+//	public void levelOrder() {
+//		Queue<Node> q = new LinkedList<>(); 
+//		q.add(root);
+//		while(!q.isEmpty()) {
+//			Node cur = q.poll();
+//			System.out.println(cur.e);
+//			
+//			if(cur.left != null)
+//				q.add(cur.left);
+//			if(cur.right != null)
+//				q.add(cur.right);
+//		}
+//	}
 	
 	public void inOrder() {
 		inOrder(root);
